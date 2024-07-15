@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.content-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navigation-container .date-display {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.nav-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #45a049;
+}
+
+.task-list-container {
+  flex-grow: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.task-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.task-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 15px; /* שינוי למרווח שמאלי */
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.task-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.task-item h4 {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.task-item p {
+  margin: 0;
+  color: #555;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.task-form input,
+.task-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-form .add-task-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.task-form .add-task-button:hover {
+  background-color: #45a049;
+}
